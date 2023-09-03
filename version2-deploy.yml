@@ -67,7 +67,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-  - host: version2.appstest.apps.com
+  - host: version2.apptest.apps.com
     http:
       paths:
       - backend:
