@@ -1,0 +1,15 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: myingressroute
+  namespace: apptest
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`version1.apptest.apps.com`) && PathPrefix(`/`)
+    kind: Rule
+    services:
+    - name: traefikservice
+      namespace: apptest
+      kind: TraefikService
