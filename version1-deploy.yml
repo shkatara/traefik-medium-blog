@@ -68,7 +68,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-  - host: version1.trivago.apps.com
+  - host: version1.appstest.apps.com
     http:
       paths:
       - backend:
